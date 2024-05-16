@@ -12,8 +12,8 @@ exports.agregarCliente = async(req,res)=>{
 
     } catch (error) {
         console.log(error);
-        //res.status(500).send('hubo un error al agregar un cliente');
-        res.status(500).send(error);
+        res.status(500).send('hubo un error al agregar un cliente');
+        
         
     }
 }
@@ -28,7 +28,8 @@ exports.consultarClientes = async(req,res)=>{
         
     } catch (error) {
         console.log(error);
-        res.status(500).send('hubo un error al consultar cliente');
+        //res.status(500).send('hubo un error al consultar cliente');
+        res.status(500).send(error);
     }
 }
 
