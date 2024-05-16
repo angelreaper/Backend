@@ -12,7 +12,9 @@ exports.agregarCliente = async(req,res)=>{
 
     } catch (error) {
         console.log(error);
-        res.status(500).send('hubo un error al agregar un cliente');
+        //res.status(500).send('hubo un error al agregar un cliente');
+        res.status(500).send(error);
+        
     }
 }
 
