@@ -9,7 +9,7 @@ app.use(cors());
 //habilitar json
 app.use(express.json());
 
-const PORT = process.env.PORT || 4000;
+const PORT = process.env.PORT || 7000;
 
 //llamamos las rutas
 //http://localhost:4000/api/usuarios
@@ -21,5 +21,5 @@ app.use('/api/auth',require('../routes/Auth'));
 app.use('/api/clientes',require('../routes/Clientes'));
 
 app.listen(PORT,(()=>{
-    console.log('Conectado al servidor http://localhost:4000');
+    console.log('Conectado al servidor http://localhost:7000');
 }))
