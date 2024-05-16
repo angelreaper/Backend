@@ -29,7 +29,7 @@ exports.consultarClientes = async(req,res)=>{
     } catch (error) {
         console.log(error);
         //res.status(500).send('hubo un error al consultar cliente');
-        res.status(500).send(error);
+        res.status(500).json({msg:error});
     }
 }
 
