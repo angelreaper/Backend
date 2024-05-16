@@ -1,5 +1,7 @@
 const mongoose = require('mongoose');
-require('dotenv').config({path:'.env'});
+//require('dotenv').config({path:'.env'});
+//require('dotenv').config({path:'.env'});
+require('dotenv').config();
 
 //conexión con mongodb
 const conectarDB = () =>{

@@ -1,5 +1,4 @@
 const Cliente  = require('../models/Cliente');//llamamos el modelo
-require('dotenv').config({path:'.env'});
 //Funcion agregar cliente
 exports.agregarCliente = async(req,res)=>{
 
@@ -30,8 +29,7 @@ exports.consultarClientes = async(req,res)=>{
         
     } catch (error) {
         console.log(error);
-        //res.status(500).send('hubo un error al consultar cliente');
-        res.status(500).send(process.env.DB_MONGO);
+        res.status(500).send('hubo un error al consultar cliente');
     }
 }
 
