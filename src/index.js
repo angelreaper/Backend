@@ -25,6 +25,9 @@ app.use('/api/auth',require('../routes/Auth'));
 //http://localhost:4000/api/clientes
 app.use('/api/clientes',require('../routes/Clientes'));
 
+//http://localhost:4000/api/clientes
+app.use('/api/proveedores',require('../routes/Proveedor'));
+
 app.listen(PORT,(()=>{
     console.log('Conectado al servidor http://localhost:7000');
 }))
