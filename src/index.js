@@ -5,7 +5,11 @@ const app = express();
 
 conectarDB();
 //habilitar cors
-app.use(cors());
+//app.use(cors());
+//aquí permitimos que se consulte desde el front de vercel
+app.use(cors({
+    origin: 'https://frontend-three-omega-60.vercel.app'
+  }));
 //habilitar json
 app.use(express.json());
 
